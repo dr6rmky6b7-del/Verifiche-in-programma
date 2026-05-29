@@ -64,17 +64,19 @@ h2 {
     margin: 5px 0;
 }
 
-.input-data{
+input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
+    max-width: 100%;
     padding: 14px 16px;
     border: 1px solid #b3ada5;
     border-radius: 12px;
     font-size: 16px;
-    outline: none;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     background-color: #ffffff;
     color: #000000;
-    margin: 5px 0;
+    box-sizing: border-box;
 }
 
 .button {
