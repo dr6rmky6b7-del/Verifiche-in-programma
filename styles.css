@@ -65,13 +65,12 @@ h2 {
     font-family: "Times New Roman";
     background-color: #ffffff;
     color: #000000;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 input[type="date"] {
     width: 100%;
     padding: 14px 16px;
-    padding-right: 44px;
     min-height: 56px;
     border: 1px solid #b3ada5;
     border-radius: 12px;
@@ -81,12 +80,11 @@ input[type="date"] {
     font-family: "Times New Roman";
     background-color: #ffffff;
     color: #000000;
-    margin: 5px;
-    -webkit-appearance: textfield;
-    appearance: textfield;
+    margin: 5px 0;
+    -webkit-appearance: auto;
+    appearance: auto;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 1;
     cursor: pointer;
