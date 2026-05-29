@@ -16,7 +16,8 @@ body {
 }
 
 .container > h2,
-.container > p {
+.container > p,
+.container > label{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
