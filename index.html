@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Verifiche in Programma</title>
+		<link rel="stylesheet" href="styles.css"> <!-- Collega il CSS esterno -->
+	</head>
+	<body>
+        <h1>Gestione verifiche</h1>
+		<div class="container">
+			<h2>Aggiungi Verifica</h2>
+			<p style="color: rgb(99, 99, 99);">Registra e gestisci le tue verifiche direttamente nella pagina. Tutti i dati restano locali e risiedono nel browser.</p>
+			<input type="text" id="materia" placeholder="Materia" class="input-section">
+			<input type="date" id="data" class="input-section">
+			<input type="text" id="argomento" placeholder="Argomento" class="input-section">
+			
+			<div class="slider-group">
+				<label for="difficolta">Difficoltà: <span id="difficolta-value">50</span></label>
+				<input type="range" id="difficolta" min="0" max="100" value="50" class="range-slider">
+			</div>
+			
+			<div class="slider-group">
+				<label for="importanza">Importanza: <span id="importanza-value">50</span></label>
+				<input type="range" id="importanza" min="0" max="100" value="50" class="range-slider">
+			</div>
+			
+			<div class="button-row">
+				<button id="aggiungi" class="button" type="button">Aggiungi</button>
+				<button id="annulla" class="button secondary" type="button">Annulla Modifica</button>
+				<button id="rimuovi-selezionati" class="button secondary" type="button">Rimuovi selezionati</button>
+			</div>
+			<div class="table-container">
+			<table id="verifiche-table">
+				<thead>
+					<tr>
+						<th data-sort-field="materia" class="sortable">Materia <span class="sort-indicator"></span></th>
+						<th data-sort-field="data" class="sortable">Data <span class="sort-indicator"></span></th>
+						<th data-sort-field="argomento" class="sortable">Argomento <span class="sort-indicator"></span></th>
+						<th data-sort-field="difficolta" class="sortable">Difficoltà <span class="sort-indicator"></span></th>
+						<th data-sort-field="importanza" class="sortable">Importanza <span class="sort-indicator"></span></th>
+						<th>Azioni</th>
+						<th>Seleziona</th>
+					</tr>
+				</thead>
+				<tbody id="verifiche-body">
+					<!-- Le verifiche aggiunte appariranno qui -->
+				</tbody>
+			</table>
+		</div>
+		</div>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
+
+
+
+
+
